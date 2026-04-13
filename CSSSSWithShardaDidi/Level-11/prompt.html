@@ -1,0 +1,231 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Booking - Dog Walking Service</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fb;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 400px;
+            width: 100%;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(to right, #6e45e2, #88d3ce);
+            color: white;
+            padding: 25px 20px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        header p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        
+        .separator {
+            height: 1px;
+            background: #eee;
+            margin: 5px 0;
+        }
+        
+        .chat-container {
+            padding: 20px;
+            height: 400px;
+            overflow-y: auto;
+        }
+        
+        .message {
+            margin-bottom: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .received {
+            align-items: flex-start;
+        }
+        
+        .sent {
+            align-items: flex-end;
+        }
+        
+        .message-bubble {
+            max-width: 80%;
+            padding: 12px 16px;
+            border-radius: 18px;
+            margin-top: 5px;
+        }
+        
+        .received .message-bubble {
+            background: #f0f4ff;
+            border-top-left-radius: 4px;
+            color: #555;
+        }
+        
+        .sent .message-bubble {
+            background: linear-gradient(to right, #6e45e2, #88d3ce);
+            color: white;
+            border-top-right-radius: 4px;
+        }
+        
+        .sender {
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 4px;
+            color: #777;
+        }
+        
+        .options {
+            background: #f9f9f9;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        
+        .option-item {
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .option-item:last-child {
+            border-bottom: none;
+        }
+        
+        .option-item input[type="checkbox"] {
+            margin-right: 10px;
+            accent-color: #6e45e2;
+        }
+        
+        .price {
+            margin-left: auto;
+            font-weight: bold;
+            color: #6e45e2;
+        }
+        
+        .message-input {
+            display: flex;
+            padding: 15px 20px;
+            background: #f9f9f9;
+            border-top: 1px solid #eee;
+        }
+        
+        .message-input input {
+            flex: 1;
+            padding: 12px 15px;
+            border: none;
+            border-radius: 30px;
+            background: white;
+            font-size: 14px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+        
+        .message-input input:focus {
+            outline: none;
+            box-shadow: 0 2px 10px rgba(110, 69, 226, 0.2);
+        }
+        
+        .attribution {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Simple booking</h1>
+            <p>Stay in touch with our dog walkers through the chat interface</p>
+        </header>
+        
+        <div class="separator"></div>
+        
+        <div class="chat-container">
+            <div class="message received">
+                <span class="sender">Sexual Cetten</span>
+                <div class="message-bubble">
+                    This sounds great. I'm happy with that.
+                </div>
+            </div>
+            
+            <div class="message received">
+                <span class="sender">Sexual Cetten</span>
+                <div class="message-bubble">
+                    Could we see some extra pictures of your dog?
+                </div>
+            </div>
+            
+            <div class="message sent">
+                <div class="message-bubble">
+                    How about a few pictures? Here's a happy girl!
+                </div>
+            </div>
+            
+            <div class="message sent">
+                <div class="message-bubble">
+                    Once you make it!
+                </div>
+            </div>
+            
+            <div class="message received">
+                <span class="sender">Sexual Cetten</span>
+                <div class="message-bubble">
+                    The links on how? The time we placed inside. How long does this move out for?
+                </div>
+            </div>
+            
+            <div class="options">
+                <div class="option-item">
+                    <input type="checkbox" id="notebook">
+                    <label for="notebook">The notebook</label>
+                    <span class="price">$39</span>
+                </div>
+                
+                <div class="option-item">
+                    <input type="checkbox" id="facebook">
+                    <label for="facebook">Facebook</label>
+                    <span class="price">$40</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="message-input">
+            <input type="text" placeholder="Type a message...">
+        </div>
+    </div>
+    
+    <div class="attribution">
+        Design inspired by the provided content | Created with HTML & CSS
+    </div>
+</body>
+</html>

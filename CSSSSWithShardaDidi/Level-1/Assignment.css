@@ -1,0 +1,28 @@
+ p{
+    background-color:brown ;
+    text-align: center;
+    color: white;
+    line-height: 30px;
+ }
+ h1{
+    text-align: center;
+    color:black
+    
+ }
+  
+ a{
+    color:green;
+    text-decoration: none;
+    
+ }
+ button{
+    background-color: white;
+    color: blueviolet;
+ }
+ textarea{
+    background-color: #000000;
+    color:black;
+ }
+ span{
+    text-decoration: underline;
+ }

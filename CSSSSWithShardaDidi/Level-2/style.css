@@ -1,0 +1,88 @@
+ *{
+    font-family: 'Courier New';
+ }
+ h3{
+    color: purple !important;
+ } 
+ h1{
+    color:#B92B27;
+ }
+ #login{
+    background-color: white; 
+    
+ }
+ #signup{
+    background-color: #B92B27;
+    color:white;
+ }
+ .upvote{
+    background-color: green;
+ }
+ /* Descedent selector */
+.post a{
+    color:purple;
+    background-color: yellow;
+ }
+ nav a{
+    color:purple
+ }
+ p+h3{
+    text-decoration: underline;
+ } 
+ .upvote+button{
+    background-color: cornflowerblue;
+    color: darkblue;
+ }
+ div >input{
+    background-color: darksalmon;
+
+ }
+ input[type="text"]{
+    color: red;
+ }
+ input[type="password"]{
+    color:blue;
+ }
+ input[type]{
+    background-color: ghostwhite;
+ }
+ #myId p{
+   color:#B92B27;
+ }
+ button:hover{
+   background-color: black;
+   color:white;
+ }
+ h3:hover{
+   text-decoration: overline;
+ }
+ button:active{
+   background-color: hotpink;
+   color: black;
+ }
+ p:active{
+   font-weight: bold;
+   color:green;
+ }
+ input[type="radio"]:checked+label{
+   color:red;
+   font-weight:bold;
+ }
+ div :nth-of-type(3n){
+   background-color: blanchedalmond ;
+ }
+ h1::first-letter{
+   color:green;
+ }
+ p::first-line{
+   color:green;
+ }
+ p::selection{
+   background-color: yellow;
+ }
+ h3{
+   background-color: yellow;
+ }
+ h3{
+   background-color: blue;
+ }
